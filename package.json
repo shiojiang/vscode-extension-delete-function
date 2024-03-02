@@ -2,6 +2,7 @@
   "name": "vscode-extension-delete-function",
   "displayName": "vscode-extension-delete-function",
   "description": "快捷删除函数插件",
+  "publisher": "shiojiang",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.86.0"
@@ -15,9 +16,15 @@
     "commands": [
       {
         "command": "vscode-extension-delete-function.helloWorld",
-        "title": "Hello World"
+        "title": "DELETE FUNCTION"
       }
-    ]
+    ],
+    "keybindings": [{
+      "command": "vscode-extension-delete-function.helloWorld",
+      "key": "ctrl+r r",
+      "mac": "cmd+r r",
+      "when": "editorTextFocus"
+    }]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

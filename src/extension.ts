@@ -5,7 +5,7 @@ import { getFunctionNode } from './main';
 export function activate(context: vscode.ExtensionContext) {
 	vscode.commands.registerCommand('vscode-extension-delete-function.helloWorld', () => {
 		// 调用Message
-		vscode.window.showInformationMessage('Hello World from vscode-extension-delete-function!!');
+		vscode.window.showInformationMessage('已删除该函数声明');
 		// 删除字符
 		const editor = vscode.window.activeTextEditor;
 
